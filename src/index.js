@@ -1,4 +1,9 @@
 module.exports = function check(str, bracketsConfig) {
+  //сделаем проверку на валидность числа скобочек, их должно быть четное количество
+  if (str.length % 2 !== 0) {
+    return false;
+  }
+
   let BRACKETS_PAIR = {};
 
   // формируем объект пар закрывающая - открывающая
